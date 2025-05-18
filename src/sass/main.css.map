@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sources":["bais/_reset.scss","main.css","bais/_text.scss"],"names":[],"mappings":"AAAA;EACI,gBAAA;EACA,SAAA;EACA,UAAA;ACCJ;;ADEA;EACI,qBAAA;ACCJ;;ADEA;EACI,cAAA;EACA,WAAA;EACA,YAAA;EACA,eAAA;ACCJ;;ADEA;EACI,SAAA;ACCJ;;ACnBA;EACI,kCAAA;ADsBJ","file":"main.css"}
