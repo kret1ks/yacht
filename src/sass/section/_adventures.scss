@@ -1,0 +1,53 @@
+.adventures {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__text {
+    font-family: 'DM Sans';
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 2.88;
+    letter-spacing: -1.08px;
+    width: 335px;
+  }
+
+  &__subtext {
+    color: $logo-color;
+    font-family: 'DM Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.96;
+    letter-spacing: -0.28px;
+    width: 160px;
+  }
+
+  &__kitchen {
+    width: 335px;
+    height: 524px;
+  }
+
+  &__sofa {
+    width: 335px;
+    height: 289px;
+  }
+
+  &__yacht {
+    width: 260px;
+    height: 244px;
+  }
+
+  &__title {
+    color: $logo-color;
+    font-family: 'DM Sans';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 3.96;
+    letter-spacing: -1.62px;
+    width: 310px;
+  }
+
+  &__button {
+    padding: 14px 28px;
+  }
+}
