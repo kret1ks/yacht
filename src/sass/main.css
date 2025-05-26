@@ -24,7 +24,6 @@ h1, h2, h3, p {
   margin: 0 auto;
   padding: 0 8px;
   outline: 1px solid rgb(255, 0, 0);
-  background: #11131F;
 }
 @media screen and (min-width: 355px) {
   .container {
@@ -47,7 +46,6 @@ h1, h2, h3, p {
   margin: 0 auto;
   padding: 0 8px;
   outline: 1px solid rgb(255, 0, 0);
-  background: #11131F;
 }
 @media screen and (min-width: 355px) {
   .container {
@@ -144,4 +142,84 @@ body {
 }
 .adventures__button {
   padding: 14px 28px;
+}
+
+.card {
+  padding-bottom: 164px;
+}
+.card .card__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card__item {
+  border-radius: 40px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card__diving {
+  width: 335px;
+  height: 335px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 736px) {
+  .card__diving {
+    width: 704px;
+    height: 632px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .card__diving {
+    width: 712px;
+    height: 632px;
+  }
+}
+.card__fishing {
+  width: 335px;
+  height: 335px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 736px) {
+  .card__fishing {
+    width: 400px;
+    height: 389px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .card__fishing {
+    width: 440px;
+    height: 428px;
+  }
+}
+.card__sunbathing {
+  width: 335px;
+  height: 335px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 736px) {
+  .card__sunbathing {
+    width: 380px;
+    height: 352px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .card__sunbathing {
+    width: 436px;
+    height: 352px;
+  }
+}
+.card__text {
+  color: #11131F;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.81px;
 }/*# sourceMappingURL=main.css.map */
