@@ -1,29 +1,27 @@
 <section class="card">
     <div class="container">
-        <div class="img"></div>
-        <ul class="img__list">
-            <li class="img__item">
-                <img src="" alt="" class="img__path">
-                <button type="button">Diving</button>
-            </li>
-              <li class="img__item">
-                <img src="" alt="" class="img__path">
-                <button type="button">Fishing</button>
-            </li>
-              <li class="img__item">
-                <img src="" alt="" class="img__path">
-                <button type="button">Sunbathing</button>
-            </li>
-        </ul>
-    <div class="yacht">
-            <h2 class="yacht__title">Rent a yacht now</h2>
-            <form>
-                <input type="text" placeholder="Full Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Phone number">
-                <input type="text" placeholder="Comment">
-                <button type="submit">Send</button>
-            </form>
+    <ul class="card__list">
+        <li class="card__item">
+            <picture>
+             <source srcset="../img/desktop/diving-desktop@1x.webp 1x, ../img/desktop/diving-desktop@2x.webp 2x" media="(min-width: 1248px)">
+             <source srcset="../img/tablet/diving-tablet@1x.webp 1x, ../img/tablet/diving-tablet@2x.webp 2x" media="(min-width: 736px)">
+             <source srcset="../img/mobile/diving-mobile@1x.webp 1x, ../img/mobile/diving-mobile@2x.webp 2x" media="(max-width: 735px)">
+                <img src="../img/desktop/diving-desktop@1x.webp" alt="diving" class="card__img">
+            </picture>
+            <p class="card__text">Diving</p>
+        </li>
+            <li class="card__item">
+                <picture>
+                    <source src="../img/desktop/fishing-desktop@1x.webp 1x, ../img/desktop/fishing-desktop@2x.webp 2x" media="(min-width: 1248px)">
+                    <source src="../img/tablet/fishing-tablet@1x.webp 1x, ../img/tablet/fishing-tablet@2x.webp 2x" media="(min-width: 736px)">
+                    <!-- <source src="../img/mob"> -->
+                     
+                </picture>
+            <p class="card__text">Fishing</p>
+        </li>
+            <li class="card__item">
+            <p class="card__text">Sunbathing</p>
+        </li>
+    </ul>
     </div>
-     </div>
 </section>
