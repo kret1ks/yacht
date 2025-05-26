@@ -11,4 +11,24 @@
     width: 146px;
     height: 10px;
   }
+
+  &__text {
+    color: $logo-color;
+    font-family: 'DM Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.65;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__menu {
+    width: 24px;
+    height: 24px;
+  }
 }
