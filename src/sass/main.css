@@ -222,4 +222,16 @@ body {
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.81px;
+}
+
+@media screen and (min-width: 736px) and (max-width: 1248px) {
+  .card__list {
+    display: flex;
+  }
+  .card__item:nth-child(2) {
+    margin-left: auto;
+  }
+  .card__item:nth-child(3) {
+    margin-right: auto;
+  }
 }/*# sourceMappingURL=main.css.map */

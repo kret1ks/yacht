@@ -1,27 +1,28 @@
+
 .card {
   padding-bottom: 164px;
 
+  .card__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    justify-content: center;
+    align-items: flex-end;
+  }
 
+  &__item {
+    border-radius: 40px;
+    overflow: hidden;
+    cursor: pointer;
+  }
 
-.card__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 64px;
-  justify-content: center;
-  align-items: flex-end; // зробить так, щоб всі елементи були по одному рівню по висоті
-}
-
-&__item{
-  border-radius: 40px;
-overflow: hidden;
-cursor: pointer;
-}
   &__diving {
     width: 335px;
     height: 335px;
-  display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+
     @media screen and (min-width: 736px) {
       width: 704px;
       height: 632px;
@@ -36,9 +37,10 @@ cursor: pointer;
   &__fishing {
     width: 335px;
     height: 335px;
-  display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+
     @media screen and (min-width: 736px) {
       width: 400px;
       height: 389px;
@@ -53,9 +55,10 @@ cursor: pointer;
   &__sunbathing {
     width: 335px;
     height: 335px;
-  display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+
     @media screen and (min-width: 736px) {
       width: 380px;
       height: 352px;
@@ -66,12 +69,25 @@ cursor: pointer;
       height: 352px;
     }
   }
-  &__text{
-    color: $hero-color;
-font-size: 18px;
-font-weight: 700;
-line-height: 1.1;
-letter-spacing: -0.81px;
 
+  &__text {
+    color: $hero-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.81px;
+  }
+}
+
+@media screen and (min-width: 736px) and (max-width: 1248px) {
+  .card__list {
+    display: flex;
+  }
+
+  .card__item:nth-child(2) {
+    margin-left: auto;
+  }
+  .card__item:nth-child(3) {
+    margin-right: auto;
   }
 }
