@@ -14,7 +14,7 @@
             height: 279px;
             border-radius: 279px;
             opacity: 0.6;
-            background: $accent-color;
+            background: $acent-color;
             filter: blur(100px);
 
 
@@ -29,7 +29,7 @@
             height: 279px;
             border-radius: 279px;
             opacity: 0.9;
-            background: $accent-color;
+            background: $acent-color;
             filter: blur(100px);
             z-index: -3;
 
@@ -65,7 +65,7 @@
      
 
         .hero__span {
-            background: var(--linear-green, linear-gradient(92deg, $italic-color 41.03%, $bcg-gray-color 90.31%));
+           
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -96,7 +96,7 @@
         width: 100%;
         border: none;
         border-radius: 60px;
-        background: $accent-color;
+        background: $acent-color;
         padding: 14px 28px;
         color: $logo-color;
         font-size: 14px;
@@ -108,7 +108,6 @@
    
 
         &:hover, &:focus {
-            background-color: $btn-hover-color;
             outline: none;
         }
     }
@@ -120,8 +119,8 @@
 
         &:hover, &:focus {
             background: transparent;
-            color: $accent-color;
-            outline: 1px solid $italic-color;
+            color: $acent-color;
+           
         }
     }
 
@@ -144,7 +143,7 @@
             height: 4.57%;
             border-bottom-left-radius: 30px;
             border-bottom-right-radius: 30px;
-            background-color: $bcg-gray-color;
+   
         }
 
     }
@@ -175,7 +174,7 @@
     &__icon-client {
         width: 48px; 
         border-radius: 48px;
-        outline: 2px solid $accent-color;
+        outline: 2px solid $acent-color;
 
   
 
@@ -193,7 +192,7 @@
     }
 
     &__client-text {
-        color: $black-color;
+      
         font-size: 14px;
         font-weight: 700;
         line-height: 1.1;
@@ -219,7 +218,6 @@
     }
 
     &__price-title {
-        color: $black-color;
         font-size: 48px;
         font-weight: 400;
         line-height: 1.1;
@@ -230,7 +228,6 @@
 
     &__price-text {
         width: 100%;
-        color: $black-color;
         font-size: 14px;
         font-weight: 400;
         line-height: 1.1;
