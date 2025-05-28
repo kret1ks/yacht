@@ -1,0 +1,251 @@
+.hero {
+    padding: 40px 0px 80px 0px;
+
+    .container {
+        position: relative;
+        z-index: 5;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 400px;
+            left: 0px;
+            width: 279px;
+            height: 279px;
+            border-radius: 279px;
+            opacity: 0.6;
+            background: $accent-color;
+            filter: blur(100px);
+
+
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 400px;
+            left: 0px;
+            width: 279px;
+            height: 279px;
+            border-radius: 279px;
+            opacity: 0.9;
+            background: $accent-color;
+            filter: blur(100px);
+            z-index: -3;
+
+
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__items>&__item:nth-child(1) {
+        padding: 0px 0px 0px 0px;
+
+    }
+
+    &__title {
+        width: 100%;
+        color: $logo-color; 
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: -1.62px; 
+
+     
+
+        .hero__span {
+            background: var(--linear-green, linear-gradient(92deg, $italic-color 41.03%, $bcg-gray-color 90.31%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-style: italic;
+        }
+    }
+
+    &__text {
+        width: 100%;
+        color: $logo-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: -0.28px;
+        margin: 14px 0px 24px 0px; 
+
+       
+    }
+
+    &__items-btn {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+
+    &__button {
+        width: 100%;
+        border: none;
+        border-radius: 60px;
+        background: $accent-color;
+        padding: 14px 28px;
+        color: $logo-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.63px;
+        transition: 250ms;
+
+   
+
+        &:hover, &:focus {
+            background-color: $btn-hover-color;
+            outline: none;
+        }
+    }
+
+    &__items-btn > &__item-btn:nth-child(2) > &__button {
+        outline: 1px solid $logo-color;
+        background: transparent;
+        transition: 250ms ease-in-out;
+
+        &:hover, &:focus {
+            background: transparent;
+            color: $accent-color;
+            outline: 1px solid $italic-color;
+        }
+    }
+
+    &__items>&__item:nth-child(2) {
+        padding: 24px 24px 28px 24px;
+        background-color: #A1B5BA;
+        border-radius: 25px;
+        border-bottom-right-radius: 0px;
+        position: relative;
+        margin: 0px 0px 19px 0px;
+
+    
+        
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -4.57%;
+            right: 0;
+            width: 65%;
+            height: 4.57%;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background-color: $bcg-gray-color;
+        }
+
+    }
+
+    &__clients {
+        display: flex;
+        position: relative;
+    }
+
+    &__client {
+        z-index: 9;
+    }
+
+    &__clients>&__client:nth-child(2) {
+        position: absolute;
+        top: 0px;
+        left: 41px;  
+        z-index: 8;
+    }
+
+    &__clients>&__client:nth-child(3) {
+        position: absolute;
+        top: 0px;
+        left: 85px;
+        z-index: 7;
+    }
+
+    &__icon-client {
+        width: 48px; 
+        border-radius: 48px;
+        outline: 2px solid $accent-color;
+
+  
+
+        .hero__clients>.hero__client:nth-child(2)>& {
+            position: absolute;
+            top: 0px;
+            left: 60px;  
+        }
+    
+        .hero__clients>.hero__client:nth-child(3)>& {
+            position: absolute;
+            top: 0px;
+            left: 60px;
+        }
+    }
+
+    &__client-text {
+        color: $black-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.56px;
+        text-transform: uppercase;
+        margin: 13px 0px 0px 0px;
+
+
+    }
+
+    &__img {
+        width: 100%; 
+        margin: 52px 0px 14px 0px;
+
+    }
+
+    &__price {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+
+
+    }
+
+    &__price-title {
+        color: $black-color;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 1.1;
+        letter-spacing: -2.16px;
+        text-transform: uppercase; 
+
+    }
+
+    &__price-text {
+        width: 100%;
+        color: $black-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.1;
+        letter-spacing: -0.63px;
+
+
+    }
+
+
+    &__img-man {
+        border-radius: 24px;
+        width: 133px;
+        position: absolute;
+        top: 35px;
+        right: -12px;
+
+    }
+}
