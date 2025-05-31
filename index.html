@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
     <script type="module" crossorigin src="/yacht/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/yacht/assets/index-cc363079.css">
+    <link rel="stylesheet" href="/yacht/assets/index-3f98183f.css">
   </head>
   <body>
    
@@ -186,7 +186,41 @@
     </div>
 </section>
 
-    
+    <section class="yacht">
+    <div class="container">
+        <div class="yacht__content">
+            <div class="yacht__left">
+                <h2 class="yacht__title">Rent a yacht now</h2>
+                <picture class="yacht__picture">
+                    <source srcset="../img/desktop/rentyacht-desktop@1x.webp 1x, ../img/desktop/rentyacht-desktop@2x.webp 2x">
+                    <source srcset="../img/tablet/rentyacht-tablet@1x.webp 1x, ../img/tablet/rentyacht-tablet@2x.webp 2x">
+                    <source srcset="../img/mobile/rentyacht-mobile@1x.webp 1x, ../img/mobile/rentyacht-mobile@2x.webp 2x">
+                    <img src="../img/desktop/rentyacht-desktop@1x.webp" alt="yacht-now" class="yacht__img">
+                </picture>
+            </div>
+            
+            <div class="yacht__right">
+                <form class="yacht__form">
+                    <ul class="yacht__list">
+                        <li class="yacht__item">
+                            <input class="yacht__input" type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                        </li>
+                        <li class="yacht__item">
+                            <input class="yacht__input" type="email" id="email" name="email" placeholder="Email" required>
+                        </li>
+                        <li class="yacht__item">
+                            <input class="yacht__input" type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                        </li>
+                        <li class="yacht__item">
+                            <textarea class="yacht__input yacht__textarea" id="comment" name="comment" placeholder="Comment"></textarea>
+                        </li>
+                    </ul>
+                    <button class="yacht__btn" type="submit">Send →</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
     <section class="team">
     <div class="container">
     <div class="team__card">
