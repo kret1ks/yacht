@@ -1,0 +1,94 @@
+.yacht {
+  background: #11131f;
+  padding: 60px 0;
+
+
+
+  &__content {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__left {
+    flex: 1;
+  }
+
+  &__right {
+    width: 400px;
+  }
+
+  &__title {
+    color: $logo-color;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -2.7px;
+    margin-bottom: 64px;
+
+    span {
+      display: block;
+      font-weight: 700;
+    }
+  }
+
+  &__img {
+    width: 282px;
+    height: 191px;
+    border-radius: 8px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: $logo-color;
+    font-size: 16px;
+
+  
+  }
+
+  &__textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+
+  &__btn {
+    background: $logo-color;
+    color: #11131f;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+
+ 
+  }
+
+  @media (max-width: 768px) {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__right {
+      width: 100%;
+    }
+  }
+}
