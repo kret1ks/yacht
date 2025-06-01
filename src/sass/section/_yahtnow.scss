@@ -1,8 +1,6 @@
 .yacht {
-  background: #11131f;
+  background: $hero-color;
   padding: 60px 0;
-
-
 
   &__content {
     display: flex;
@@ -14,22 +12,35 @@
   }
 
   &__right {
-    width: 400px;
+    width: 386px;
   }
 
   &__title {
     color: $logo-color;
-    font-size: 60px;
+    font-size: 36px;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: -2.7px;
-    margin-bottom: 64px;
+    margin-bottom: 16px;
+    width: 271px;
 
-    span {
-      display: block;
-      font-weight: 700;
+    @media screen and (min-width: 736px) {
+      width: 287px;
+      font-size: 60px;
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1248px) {
+      width: 282px;
+      font-size: 60px;
+      margin-bottom: 64px;
     }
   }
+
+  // span {
+  //   display: block;
+  //   font-weight: 700;
+  // }
 
   &__img {
     width: 282px;
@@ -59,8 +70,6 @@
     border-radius: 4px;
     color: $logo-color;
     font-size: 16px;
-
-  
   }
 
   &__textarea {
@@ -69,20 +78,30 @@
   }
 
   &__btn {
-    background: $logo-color;
-    color: #11131f;
+    color: $logo-color;
+    background-color: $hero-color;
     border: none;
-    padding: 12px 24px;
-    border-radius: 4px;
+    border-radius: 60px;
+    border: 1px solid var(--white, #f6f5ef);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 28px;
+    padding-right: 28px;
     font-size: 16px;
     font-weight: 500;
+    margin-top: 24px;
     cursor: pointer;
     transition: background 0.3s;
 
- 
+    @media screen and (min-width: 736px) {
+      margin-top: auto;
+    }
+    @media screen and (min-width: 1248px) {
+      margin-top: 37px;
+    }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 736px) {
     &__content {
       flex-direction: column;
     }

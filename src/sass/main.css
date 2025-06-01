@@ -333,7 +333,7 @@ body {
 }
 
 .yacht {
-  background: #11131f;
+  background: #11131F;
   padding: 60px 0;
 }
 .yacht__content {
@@ -344,19 +344,30 @@ body {
   flex: 1;
 }
 .yacht__right {
-  width: 400px;
+  width: 386px;
 }
 .yacht__title {
   color: #F6F5EF;
-  font-size: 60px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -2.7px;
-  margin-bottom: 64px;
+  margin-bottom: 16px;
+  width: 271px;
 }
-.yacht__title span {
-  display: block;
-  font-weight: 700;
+@media screen and (min-width: 736px) {
+  .yacht__title {
+    width: 287px;
+    font-size: 60px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .yacht__title {
+    width: 282px;
+    font-size: 60px;
+    margin-bottom: 64px;
+  }
 }
 .yacht__img {
   width: 282px;
@@ -388,17 +399,32 @@ body {
   resize: vertical;
 }
 .yacht__btn {
-  background: #F6F5EF;
-  color: #11131f;
+  color: #F6F5EF;
+  background-color: #11131F;
   border: none;
-  padding: 12px 24px;
-  border-radius: 4px;
+  border-radius: 60px;
+  border: 1px solid var(--white, #f6f5ef);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 28px;
+  padding-right: 28px;
   font-size: 16px;
   font-weight: 500;
+  margin-top: 24px;
   cursor: pointer;
   transition: background 0.3s;
 }
-@media (max-width: 768px) {
+@media screen and (min-width: 736px) {
+  .yacht__btn {
+    margin-top: auto;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .yacht__btn {
+    margin-top: 37px;
+  }
+}
+@media (max-width: 736px) {
   .yacht__content {
     flex-direction: column;
   }
