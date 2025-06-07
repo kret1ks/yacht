@@ -2,9 +2,18 @@
   padding-top: 27px;
   padding-bottom: 28px;
 
+  &__box {
+    display: flex;
+  }
+
   &__logo {
     width: 18px;
     height: 18px;
+  }
+
+  &__icon {
+    height: 18px;
+    width: 18px;
   }
 
   &__link {
@@ -20,6 +29,8 @@
     line-height: 1.65;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    width: 146px;
+    height: 10px;
   }
 
   &__button {
