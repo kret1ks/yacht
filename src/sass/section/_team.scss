@@ -102,12 +102,12 @@
     }
 
     &__list {
-        display: flex;
+     display: flex;
         justify-content: space-between;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
-
+        scrollbar-color: gray;
         gap: 7px;
         outline: none;
 
