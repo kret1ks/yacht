@@ -1,0 +1,195 @@
+.team {
+  background: #11131f;
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @media screen and (min-width: 728px) {
+
+        }
+
+        @media screen and (min-width: 1246px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+
+
+        &__item {
+
+            @media screen and (min-width: 728px) {
+                &:last-child {
+                    margin-left: auto;
+                }
+            }
+
+            @media screen and (min-width: 1246px) {
+                &:last-child {
+                    margin-left: 0px;
+
+                }
+            }
+
+
+        }
+
+        &__title {
+            width: 100%;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -1.08px;
+            color: $logo-color;
+            color: var(--white, #F6F5EF);
+
+            @media screen and (min-width: 728px) {
+                width: 497px;
+                font-size: 32px;
+                letter-spacing: -1.44px;
+            }
+
+            @media screen and (min-width: 1246px) {}
+        }
+
+        &__span {
+            font-size: 24px;
+            font-style: italic;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -1.08px;
+            background: var(--linear-green, linear-gradient(92deg, #BEC7C2 41.03%, #A1B5BA 90.31%));
+
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            @media screen and (min-width: 728px) {
+                font-size: 32px;
+                letter-spacing: -1.44px;
+            }
+
+            @media screen and (min-width: 1246px) {}
+        }
+
+        &__subtitle {
+            width: 100%;
+            color: $logo-color;
+            font-family: "DM Sans";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.4;
+            letter-spacing: -0.28px;
+
+
+
+
+
+            @media screen and (min-width: 728px) {
+                width: 273px;
+                font-size: 16px;
+                letter-spacing: -0.32px;
+            }
+
+            @media screen and (min-width: 1246px) {}
+        }
+    }
+
+    &__list {
+     display: flex;
+        justify-content: space-between;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-color: gray;
+        gap: 7px;
+        outline: none;
+
+    }
+
+    &__item {
+        border-radius: 24px;
+        background: #1F212D;
+        padding: 24px 16px;
+        text-align: center;
+
+        @media screen and (min-width: 728px) {
+            padding: 24px 12px;
+        }
+
+        @media screen and (min-width: 1246px) {
+            padding: 32px;
+        }
+    }
+
+
+    &__img {
+        width: 48px;
+        margin: 0px auto;
+    }
+
+    &__title {
+        color: #F6F5EF;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: -0.72px;
+        margin: 18px 0px 8px 0px;
+
+        @media screen and (min-width: 728px) {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: -0.81px;
+        }
+    }
+
+    &__text {
+
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: -0.24px;
+        width: 300px;
+        color: rgba(246, 245, 239, 0.50);
+
+
+
+        @media screen and (min-width: 728px) {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: -0.32px;
+            width: 320px;
+        }
+
+
+        .team__list > .team__item:nth-child(2) > & {
+            width: 301px;
+
+            @media screen and (min-width: 728px) {
+                width: 320px;
+            }
+        }
+
+
+        .team__list > .team__item:nth-child(3) > & {
+            width: 307px;
+
+            @media screen and (min-width: 728px) {
+                width: 280px;
+            }
+
+            @media screen and (min-width: 1246px) {
+                width: 320px;
+            }
+        }
+
+    }
+
+
+}
