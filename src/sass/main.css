@@ -82,16 +82,15 @@ body {
   display: flex;
   align-items: center;
 }
-.header__box {
-  display: flex;
-}
 .header__logo {
   width: 18px;
   height: 18px;
+  color: #F6F5EF;
 }
 .header__icon {
   height: 18px;
   width: 18px;
+  fill: #F6F5EF;
 }
 .header__link {
   width: 146px;
@@ -108,6 +107,16 @@ body {
   text-transform: uppercase;
   width: 146px;
   height: 10px;
+}
+.header__list {
+  display: flex;
+  gap: 24px;
+  display: none;
+}
+@media screen and (min-width: 736px) {
+  .header__list {
+    display: flex;
+  }
 }
 .header__button {
   width: 24px;
