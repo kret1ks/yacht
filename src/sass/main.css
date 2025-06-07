@@ -70,6 +70,17 @@ body {
 .header {
   padding-top: 27px;
   padding-bottom: 28px;
+  background-color: #11131F;
+  stroke-width: 1px;
+  stroke: rgba(246, 245, 239, 0.2);
+}
+.header__box {
+  display: flex;
+  justify-content: space-between;
+}
+.header__groupe {
+  display: flex;
+  align-items: center;
 }
 .header__box {
   display: flex;
@@ -85,6 +96,7 @@ body {
 .header__link {
   width: 146px;
   height: 10px;
+  fill: #F6F5EF;
 }
 .header__text {
   color: #F6F5EF;
@@ -100,10 +112,18 @@ body {
 .header__button {
   width: 24px;
   height: 24px;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 736px) {
+  .header__button {
+    display: none;
+  }
 }
 .header__menu {
   width: 24px;
   height: 24px;
+  fill: #F6F5EF;
 }
 
 .hero {
@@ -297,28 +317,65 @@ body {
 .adventures {
   padding-top: 80px;
   padding-bottom: 80px;
+  background-color: #11131F;
+  position: relative;
 }
 .adventures__text {
+  color: #F6F5EF;
   font-family: "DM Sans";
   font-size: 24px;
   font-style: italic;
   font-weight: 500;
-  line-height: 2.88;
+  line-height: 1.2;
   letter-spacing: -1.08px;
   width: 335px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 736px) {
+  .adventures__text {
+    font-size: 32px;
+    width: 514px;
+  }
+}
+.adventures__list {
+  display: flex;
+  gap: 14px;
+}
+@media screen and (min-width: 736px) {
+  .adventures__list {
+    justify-content: end;
+  }
 }
 .adventures__subtext {
   color: #F6F5EF;
   font-family: "DM Sans";
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.96;
+  line-height: 1.4;
   letter-spacing: -0.28px;
   width: 160px;
+}
+@media screen and (min-width: 736px) {
+  .adventures__subtext {
+    font-size: 16px;
+    width: 183px;
+  }
+}
+.adventures__groupe {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .adventures__kitchen {
   width: 335px;
   height: 524px;
+  margin-top: 40px;
+}
+@media screen and (min-width: 736px) {
+  .adventures__kitchen {
+    width: 704px;
+    height: 631px;
+  }
 }
 .adventures__sofa {
   width: 335px;
@@ -327,18 +384,30 @@ body {
 .adventures__yacht {
   width: 260px;
   height: 244px;
+  border-radius: 27px;
 }
 .adventures__title {
   color: #F6F5EF;
   font-family: "DM Sans";
   font-size: 36px;
   font-weight: 500;
-  line-height: 3.96;
+  line-height: 1.1;
   letter-spacing: -1.62px;
   width: 310px;
 }
 .adventures__button {
+  background-color: transparent;
   padding: 14px 28px;
+  color: #F6F5EF;
+  border-radius: 60px;
+  border: 1px solid var(--white, #f6f5ef);
+  margin-top: 40px;
+}
+
+.svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .yacht {
