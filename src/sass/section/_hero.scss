@@ -1,6 +1,14 @@
 .hero {
     padding: 40px 0px 80px 0px;
 
+    @media screen and (min-width: 728px) {
+        padding: 64px 0px 100px 0px;
+    }
+
+    @media screen and (min-width: 1246px) {
+        padding: 64px 0px 164px 0px;
+    }
+
     .container {
         position: relative;
         z-index: 5;
@@ -14,10 +22,24 @@
             height: 279px;
             border-radius: 279px;
             opacity: 0.6;
-            background: $accent-color;
+            background: $acent-color;
             filter: blur(100px);
 
+            @media screen and (max-width: 361px) {
+                width: 100%;
+            }
 
+            @media screen and (min-width: 728px) {
+                top: 480px;
+                width: 414px;
+                height: 414px;
+                border-radius: 414px;
+                opacity: 0.9;
+            }
+
+            @media screen and (min-width: 1246px) {
+                top: 150px;
+            }
         }
 
         &::after {
@@ -29,11 +51,29 @@
             height: 279px;
             border-radius: 279px;
             opacity: 0.9;
-            background: $accent-color;
+            background: $acent-color;
             filter: blur(100px);
             z-index: -3;
 
-
+            @media screen and (max-width: 361px) {
+                width: 100%;
+            }
+            
+            @media screen and (min-width: 728px) {
+                left: 50px;
+                width: 316.907px;
+                height: 316.908px;
+                border-radius: 316.908px;
+                opacity: 0.3;
+            }
+            
+            @media screen and (min-width: 1246px) {
+                top: 150px;
+                left: 150px;
+                width: 316px;
+                height: 316px;
+                border-radius: 316px;
+            }
         }
     }
 
@@ -43,6 +83,9 @@
         justify-content: space-between;
         gap: 40px;
 
+        @media screen and (min-width: 1246px) {
+            flex-direction: row;
+        }
     }
 
     &__item {
@@ -52,6 +95,10 @@
     &__items>&__item:nth-child(1) {
         padding: 0px 0px 0px 0px;
 
+        @media screen and (min-width: 1246px) {
+            order: 2;
+            padding: 68px 0px 0px 0px;
+        }
     }
 
     &__title {
@@ -62,10 +109,17 @@
         line-height: 1.1;
         letter-spacing: -1.62px; 
 
-     
+        @media screen and (min-width: 728px) {
+            font-size: 60px;
+            letter-spacing: -2.7px; 
+        }
+
+        @media screen and (min-width: 1246px) {
+            width: 554px;
+        }
 
         .hero__span {
-            background: var(--linear-green, linear-gradient(92deg, $italic-color 41.03%, $bcg-gray-color 90.31%));
+
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -82,7 +136,16 @@
         letter-spacing: -0.28px;
         margin: 14px 0px 24px 0px; 
 
-       
+        @media screen and (min-width: 728px) {
+            width: 539px;
+            font-size: 16px;
+            letter-spacing: -0.32px; 
+            margin: 16px 0px 32px 0px;
+        }
+
+        @media screen and (min-width: 1246px) {
+
+        }
     }
 
     &__items-btn {
@@ -96,7 +159,7 @@
         width: 100%;
         border: none;
         border-radius: 60px;
-        background: $accent-color;
+        background: $acent-color;
         padding: 14px 28px;
         color: $logo-color;
         font-size: 14px;
@@ -105,10 +168,13 @@
         letter-spacing: -0.63px;
         transition: 250ms;
 
-   
+        @media screen and (min-width: 728px) {
+            font-size: 18px;
+            letter-spacing: -0.81px; 
+        }
 
         &:hover, &:focus {
-            background-color: $btn-hover-color;
+
             outline: none;
         }
     }
@@ -120,8 +186,8 @@
 
         &:hover, &:focus {
             background: transparent;
-            color: $accent-color;
-            outline: 1px solid $italic-color;
+            color: $acent-color;
+
         }
     }
 
@@ -133,7 +199,15 @@
         position: relative;
         margin: 0px 0px 19px 0px;
 
-    
+        @media screen and (min-width: 728px) {
+            padding: 32px 32px 38px 32px;
+            width: 426px; 
+            margin: 0px 0px 25.7px 0px;
+        }
+
+        @media screen and (min-width: 1246px) {
+            order: 1;
+        }
         
         &::after {
             content: "";
@@ -144,7 +218,7 @@
             height: 4.57%;
             border-bottom-left-radius: 30px;
             border-bottom-right-radius: 30px;
-            background-color: $bcg-gray-color;
+
         }
 
     }
@@ -175,9 +249,12 @@
     &__icon-client {
         width: 48px; 
         border-radius: 48px;
-        outline: 2px solid $accent-color;
+        outline: 2px solid $acent-color;
 
-  
+        @media screen and (min-width: 728px) {
+            width: 56px;
+            border-radius: 56px;
+        }
 
         .hero__clients>.hero__client:nth-child(2)>& {
             position: absolute;
@@ -193,7 +270,7 @@
     }
 
     &__client-text {
-        color: $black-color;
+
         font-size: 14px;
         font-weight: 700;
         line-height: 1.1;
@@ -201,13 +278,18 @@
         text-transform: uppercase;
         margin: 13px 0px 0px 0px;
 
-
+        @media screen and (min-width: 728px ) {
+            margin: 11px 0px 0px 0px;
+        }
     }
 
     &__img {
         width: 100%; 
         margin: 52px 0px 14px 0px;
 
+        @media screen and (min-width: 728px) {
+            margin: 111px 0px 22px 0px;
+        }
     }
 
     &__price {
@@ -215,28 +297,39 @@
         gap: 14px;
         align-items: center;
 
-
+        @media screen and (max-width: 200px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__price-title {
-        color: $black-color;
+
         font-size: 48px;
         font-weight: 400;
         line-height: 1.1;
         letter-spacing: -2.16px;
         text-transform: uppercase; 
 
+        @media screen and (min-width: 728px) {
+            font-size: 60px;
+            letter-spacing: -2.7px; 
+        }
     }
 
     &__price-text {
         width: 100%;
-        color: $black-color;
+
         font-size: 14px;
         font-weight: 400;
         line-height: 1.1;
         letter-spacing: -0.63px;
 
-
+        @media screen and (min-width: 728px) {
+            width: 208px;
+            font-size: 18px;
+            line-height: 1.4; 
+            letter-spacing: -0.81px; 
+        }
     }
 
 
@@ -247,5 +340,12 @@
         top: 35px;
         right: -12px;
 
+        @media screen and (min-width: 728px) {
+            width: 233px;
+            right: -146px;
+        }
+        @media screen and (min-width: 1246px) {
+            right: -112px;
+        }
     }
 }
