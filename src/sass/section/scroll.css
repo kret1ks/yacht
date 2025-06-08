@@ -1,0 +1,65 @@
+.scroll {
+  padding: 43px 0px 0px 0px;
+}
+@media screen and (min-width: 728px) {
+  .scroll {
+    padding: 45px 0px 0px 0px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .scroll {
+    padding: 64px 0px 0px 0px;
+  }
+}
+.scroll__btn {
+  outline: none;
+  width: 44px;
+  height: 44px;
+  margin: 0px 0px 0px auto;
+  opacity: 0.7;
+  background-color: transparent;
+  display: block;
+  transition: 250ms;
+}
+.scroll__btn:hover, .scroll__btn:focus {
+  outline: none;
+}
+@media screen and (min-width: 728px) {
+  .scroll__btn {
+    width: 68px;
+    height: 68px;
+  }
+}
+.scroll__link {
+  outline: none;
+  display: block;
+  width: 44px;
+  height: 44px;
+  transition: 250ms;
+}
+.scroll__link:hover, .scroll__link:focus {
+  outline: none;
+}
+.scroll__link:hover .scroll__svg, .scroll__link:focus .scroll__svg {
+  transform: scale(1.1);
+}
+@media screen and (min-width: 728px) {
+  .scroll__link {
+    width: 68px;
+    height: 68px;
+  }
+}
+.scroll__svg {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border: none;
+  outline: none;
+  transition: 250ms;
+}
+@media screen and (min-width: 728px) {
+  .scroll__svg {
+    width: 68px;
+    height: 68px;
+  }
+}/*# sourceMappingURL=scroll.css.map */
