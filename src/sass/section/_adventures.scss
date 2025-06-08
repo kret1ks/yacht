@@ -1,15 +1,36 @@
 .adventures {
   padding-top: 80px;
   padding-bottom: 80px;
+  background-color: $hero-color;
+  // background-image: url(../../img/adventuresspot.webp);
+  // background-repeat: no-repeat;
+  // background-position: left bottom;
+  position: relative;
 
   &__text {
+    color: $logo-color;
     font-family: 'DM Sans';
     font-size: 24px;
     font-style: italic;
     font-weight: 500;
-    line-height: 2.88;
+    line-height: 1.2;
     letter-spacing: -1.08px;
     width: 335px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 736px) {
+      font-size: 32px;
+      width: 514px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 14px;
+
+    @media screen and (min-width: 736px) {
+      justify-content: end;
+    }
   }
 
   &__subtext {
@@ -17,14 +38,31 @@
     font-family: 'DM Sans';
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.96;
+    line-height: 1.4;
     letter-spacing: -0.28px;
     width: 160px;
+
+    @media screen and (min-width: 736px) {
+      font-size: 16px;
+      width: 183px;
+    }
+  }
+
+  &__groupe {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 
   &__kitchen {
     width: 335px;
     height: 524px;
+    margin-top: 40px;
+
+    @media screen and (min-width: 736px) {
+      width: 704px;
+      height: 631px;
+    }
   }
 
   &__sofa {
@@ -35,6 +73,7 @@
   &__yacht {
     width: 260px;
     height: 244px;
+    border-radius: 27px;
   }
 
   &__title {
@@ -42,12 +81,23 @@
     font-family: 'DM Sans';
     font-size: 36px;
     font-weight: 500;
-    line-height: 3.96;
+    line-height: 1.1;
     letter-spacing: -1.62px;
     width: 310px;
   }
 
   &__button {
+    background-color: transparent;
     padding: 14px 28px;
+    color: $logo-color;
+    border-radius: 60px;
+    border: 1px solid var(--white, #f6f5ef);
+    margin-top: 40px;
   }
+}
+
+.svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }

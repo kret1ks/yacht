@@ -1,24 +1,36 @@
 .header {
   padding-top: 27px;
   padding-bottom: 28px;
+  background-color: $hero-color;
+  stroke-width: 1px;
+  stroke: rgba(246, 245, 239, 0.20);
 
   &__box {
     display: flex;
+    justify-content: space-between;
+  }
+
+  &__groupe {
+    display: flex;
+    align-items: center;
   }
 
   &__logo {
     width: 18px;
     height: 18px;
+    color: $logo-color;
   }
 
   &__icon {
     height: 18px;
     width: 18px;
+    fill: $logo-color;
   }
 
   &__link {
     width: 146px;
     height: 10px;
+    fill: $logo-color;
   }
 
   &__text {
@@ -33,13 +45,30 @@
     height: 10px;
   }
 
+  &__list {
+    display: flex;
+    gap: 24px;
+    display: none;
+
+    @media screen and (min-width: 736px) {
+      display: flex;
+    }
+  }
+
   &__button {
     width: 24px;
     height: 24px;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: 736px) {
+      display: none;
+    }
   }
 
   &__menu {
     width: 24px;
     height: 24px;
+    fill: $logo-color;
   }
 }
