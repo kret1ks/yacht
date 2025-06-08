@@ -390,6 +390,12 @@ body {
   width: 335px;
   height: 289px;
 }
+@media screen and (min-width: 736px) {
+  .adventures__sofa {
+    width: 308px;
+    height: 289px;
+  }
+}
 .adventures__yacht {
   width: 260px;
   height: 244px;
@@ -403,6 +409,18 @@ body {
   line-height: 1.1;
   letter-spacing: -1.62px;
   width: 310px;
+}
+@media screen and (min-width: 736px) {
+  .adventures__title {
+    width: 641px;
+    font-size: 70px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .adventures__title {
+    font-size: 100px;
+    width: 822px;
+  }
 }
 .adventures__button {
   background-color: transparent;
