@@ -437,6 +437,56 @@ body {
   bottom: 0;
 }
 
+.boat {
+  padding-top: 164px;
+  padding-bottom: 164px;
+  background-color: #11131F;
+}
+.boat__img {
+  width: 322px;
+  height: 268px;
+  flex-shrink: 0;
+}
+.boat__box {
+  display: flex;
+  align-items: center;
+  gap: 147px;
+  margin-top: 32px;
+}
+.boat__title {
+  color: #F6F5EF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 0.83;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+.boat__text {
+  color: #F6F5EF;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.info__text {
+  color: #F6F5EF;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.info__span {
+  display: inline-block;
+  min-width: 100px;
+  margin-right: 32px;
+}
+
 .yacht {
   background: #11131f;
   padding: 60px 0;
