@@ -604,11 +604,15 @@ body {
   border-radius: 24px;
   padding: 16px 16px 32px;
 }
+.boat__info {
+  margin-left: 15px;
+}
 .boat__box {
   display: flex;
   align-items: center;
   margin-top: 32px;
   margin-bottom: 32px;
+  margin-left: 15px;
   /* Arrow */
   /* BENETTI */
   /* BELLE ANNA */
@@ -632,7 +636,7 @@ body {
   gap: 159px;
 }
 .boat__item:nth-child(5) .boat__box {
-  gap: 147px;
+  gap: 127px;
 }
 .boat__item:nth-child(6) .boat__box {
   gap: 167px;
@@ -682,6 +686,7 @@ body {
   line-height: 118%;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-top: 5px;
 }
 .info__span {
   display: inline-block;
@@ -777,6 +782,7 @@ body {
 }
 
 .card {
+  background-color: #11131F;
   padding-bottom: 164px;
 }
 .card .card__list {
