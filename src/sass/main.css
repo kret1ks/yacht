@@ -600,7 +600,7 @@ body {
   width: 354px;
   height: 508px;
   flex-shrink: 0;
-  background: var(--blue-2, #1F212D);
+  background: var(--blue-2, #1f212d);
   border-radius: 24px;
   padding: 16px 16px 32px;
 }
