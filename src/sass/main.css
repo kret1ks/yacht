@@ -446,12 +446,58 @@ body {
   width: 322px;
   height: 268px;
   flex-shrink: 0;
+  border-radius: 24px;
+  background: url(<path-to-image>) lightgray 50%/cover no-repeat;
+}
+.boat__item {
+  width: 354px;
+  height: 508px;
+  flex-shrink: 0;
+  background: var(--blue-2, #1F212D);
+  border-radius: 24px;
+  padding: 16px 16px 32px;
 }
 .boat__box {
   display: flex;
   align-items: center;
-  gap: 147px;
   margin-top: 32px;
+  margin-bottom: 32px;
+  /* Arrow */
+  /* BENETTI */
+  /* BELLE ANNA */
+  /* Ellen */
+  /* MIRAGE */
+  /* KING */
+  /* SALT */
+  /* STORM */
+  /* COLLU */
+}
+.boat__item:nth-child(1) .boat__box {
+  gap: 147px;
+}
+.boat__item:nth-child(2) .boat__box {
+  gap: 47px;
+}
+.boat__item:nth-child(3) .boat__box {
+  gap: 114px;
+}
+.boat__item:nth-child(4) .boat__box {
+  gap: 159px;
+}
+.boat__item:nth-child(5) .boat__box {
+  gap: 147px;
+}
+.boat__item:nth-child(6) .boat__box {
+  gap: 167px;
+}
+.boat__item:nth-child(7) .boat__box {
+  gap: 168px;
+}
+.boat__item:nth-child(8) .boat__box {
+  gap: 147px;
+}
+.boat__item:nth-child(9) .boat__box {
+  gap: 154px;
 }
 .boat__title {
   color: #F6F5EF;
@@ -469,6 +515,15 @@ body {
   letter-spacing: 0.36px;
   text-transform: uppercase;
   opacity: 0.5;
+}
+.boat__list {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-color: #11131F #91AFBA;
+  padding: 0 0 5px;
+  gap: 16px;
 }
 
 .info__text {
