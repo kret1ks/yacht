@@ -7,14 +7,56 @@
     width: 322px;
     height: 268px;
     flex-shrink: 0;
+    border-radius: 24px;
+background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+
+
+  }
+  &__item {
+width: 354px;
+height: 508px;
+flex-shrink: 0;
+// background-color: red;
+background: var(--blue-2, #1F212D);
+border-radius: 24px;
+padding: 16px 16px 32px;
+
+
   }
 
-&__box {
-  display: flex;
-  align-items: center;
-  gap: 147px;
-  margin-top: 32px;
-}
+  &__box {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+margin-bottom: 32px;
+    .boat__item:nth-child(1) & {
+      gap: 147px;
+    } /* Arrow */
+    .boat__item:nth-child(2) & {
+      gap: 47px;
+    } /* BENETTI */
+    .boat__item:nth-child(3) & {
+      gap: 114px;
+    } /* BELLE ANNA */
+    .boat__item:nth-child(4) & {
+      gap: 159px;
+    } /* Ellen */
+    .boat__item:nth-child(5) & {
+      gap: 147px;
+    } /* MIRAGE */
+    .boat__item:nth-child(6) & {
+      gap: 167px;
+    } /* KING */
+    .boat__item:nth-child(7) & {
+      gap: 168px;
+    } /* SALT */
+    .boat__item:nth-child(8) & {
+      gap: 147px;
+    } /* STORM */
+    .boat__item:nth-child(9) & {
+      gap: 154px;
+    } /* COLLU */
+  }
   &__title {
     color: $logo-color;
     font-size: 16px;
@@ -33,24 +75,33 @@
     text-transform: uppercase;
     opacity: 0.5;
   }
+
+  &__list{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+scrollbar-color: $hero-color $fon-color;
+padding: 0 0 5px;
+gap: 16px;
+  }
 }
 
 .info {
   &__text {
     color: $logo-color;
-    font-family: "DM Sans";
+    font-family: 'DM Sans';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 118%;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    
   }
 
   &__span {
-    display: inline-block;  
-    min-width: 100px;      
-    margin-right: 32px;     
+    display: inline-block;
+    min-width: 100px;
+    margin-right: 32px;
   }
 }
