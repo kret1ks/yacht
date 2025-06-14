@@ -137,6 +137,17 @@ body {
 
 .hero {
   padding: 40px 0px 80px 0px;
+  background: #11131f;
+}
+@media screen and (min-width: 728px) {
+  .hero {
+    padding: 64px 0px 100px 0px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .hero {
+    padding: 64px 0px 164px 0px;
+  }
 }
 .hero .container {
   position: relative;
@@ -154,6 +165,25 @@ body {
   background: #93ABAE;
   filter: blur(100px);
 }
+@media screen and (max-width: 361px) {
+  .hero .container::before {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 728px) {
+  .hero .container::before {
+    top: 480px;
+    width: 414px;
+    height: 414px;
+    border-radius: 414px;
+    opacity: 0.9;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .hero .container::before {
+    top: 150px;
+  }
+}
 .hero .container::after {
   content: "";
   position: absolute;
@@ -167,17 +197,51 @@ body {
   filter: blur(100px);
   z-index: -3;
 }
+@media screen and (max-width: 361px) {
+  .hero .container::after {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 728px) {
+  .hero .container::after {
+    left: 50px;
+    width: 316.907px;
+    height: 316.908px;
+    border-radius: 316.908px;
+    opacity: 0.3;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .hero .container::after {
+    top: 150px;
+    left: 150px;
+    width: 316px;
+    height: 316px;
+    border-radius: 316px;
+  }
+}
 .hero__items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 40px;
 }
+@media screen and (min-width: 1246px) {
+  .hero__items {
+    flex-direction: row;
+  }
+}
 .hero__item {
   position: relative;
 }
 .hero__items > .hero__item:nth-child(1) {
   padding: 0px 0px 0px 0px;
+}
+@media screen and (min-width: 1246px) {
+  .hero__items > .hero__item:nth-child(1) {
+    order: 2;
+    padding: 68px 0px 0px 0px;
+  }
 }
 .hero__title {
   width: 100%;
@@ -186,6 +250,17 @@ body {
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -1.62px;
+}
+@media screen and (min-width: 728px) {
+  .hero__title {
+    font-size: 60px;
+    letter-spacing: -2.7px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .hero__title {
+    width: 554px;
+  }
 }
 .hero__title .hero__span {
   background-clip: text;
@@ -201,6 +276,14 @@ body {
   line-height: 1.4;
   letter-spacing: -0.28px;
   margin: 14px 0px 24px 0px;
+}
+@media screen and (min-width: 728px) {
+  .hero__text {
+    width: 539px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    margin: 16px 0px 32px 0px;
+  }
 }
 .hero__items-btn {
   display: flex;
@@ -219,6 +302,12 @@ body {
   line-height: 1.1;
   letter-spacing: -0.63px;
   transition: 250ms;
+}
+@media screen and (min-width: 728px) {
+  .hero__button {
+    font-size: 18px;
+    letter-spacing: -0.81px;
+  }
 }
 .hero__button:hover, .hero__button:focus {
   outline: none;
@@ -239,6 +328,18 @@ body {
   border-bottom-right-radius: 0px;
   position: relative;
   margin: 0px 0px 19px 0px;
+}
+@media screen and (min-width: 728px) {
+  .hero__items > .hero__item:nth-child(2) {
+    padding: 32px 32px 38px 32px;
+    width: 426px;
+    margin: 0px 0px 25.7px 0px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .hero__items > .hero__item:nth-child(2) {
+    order: 1;
+  }
 }
 .hero__items > .hero__item:nth-child(2)::after {
   content: "";
@@ -274,6 +375,12 @@ body {
   border-radius: 48px;
   outline: 2px solid #93ABAE;
 }
+@media screen and (min-width: 728px) {
+  .hero__icon-client {
+    width: 56px;
+    border-radius: 56px;
+  }
+}
 .hero__clients > .hero__client:nth-child(2) > .hero__icon-client {
   position: absolute;
   top: 0px;
@@ -292,14 +399,29 @@ body {
   text-transform: uppercase;
   margin: 13px 0px 0px 0px;
 }
+@media screen and (min-width: 728px) {
+  .hero__client-text {
+    margin: 11px 0px 0px 0px;
+  }
+}
 .hero__img {
   width: 100%;
   margin: 52px 0px 14px 0px;
+}
+@media screen and (min-width: 728px) {
+  .hero__img {
+    margin: 111px 0px 22px 0px;
+  }
 }
 .hero__price {
   display: flex;
   gap: 14px;
   align-items: center;
+}
+@media screen and (max-width: 200px) {
+  .hero__price {
+    flex-wrap: wrap;
+  }
 }
 .hero__price-title {
   font-size: 48px;
@@ -308,6 +430,12 @@ body {
   letter-spacing: -2.16px;
   text-transform: uppercase;
 }
+@media screen and (min-width: 728px) {
+  .hero__price-title {
+    font-size: 60px;
+    letter-spacing: -2.7px;
+  }
+}
 .hero__price-text {
   width: 100%;
   font-size: 14px;
@@ -315,12 +443,31 @@ body {
   line-height: 1.1;
   letter-spacing: -0.63px;
 }
+@media screen and (min-width: 728px) {
+  .hero__price-text {
+    width: 208px;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: -0.81px;
+  }
+}
 .hero__img-man {
   border-radius: 24px;
   width: 133px;
   position: absolute;
   top: 35px;
   right: -12px;
+}
+@media screen and (min-width: 728px) {
+  .hero__img-man {
+    width: 233px;
+    right: -146px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .hero__img-man {
+    right: -112px;
+  }
 }
 
 .adventures {
@@ -878,72 +1025,6 @@ body {
 @media screen and (min-width: 1246px) {
   .team__list > .team__item:nth-child(3) > .team__text {
     width: 320px;
-  }
-}
-
-.scroll {
-  padding: 43px 0px 0px 0px;
-}
-@media screen and (min-width: 728px) {
-  .scroll {
-    padding: 45px 0px 0px 0px;
-  }
-}
-@media screen and (min-width: 1246px) {
-  .scroll {
-    padding: 64px 0px 0px 0px;
-  }
-}
-.scroll__btn {
-  outline: none;
-  width: 44px;
-  height: 44px;
-  margin: 0px 0px 0px auto;
-  opacity: 0.7;
-  background-color: transparent;
-  display: block;
-  transition: 250ms;
-}
-.scroll__btn:hover, .scroll__btn:focus {
-  outline: none;
-}
-@media screen and (min-width: 728px) {
-  .scroll__btn {
-    width: 68px;
-    height: 68px;
-  }
-}
-.scroll__link {
-  outline: none;
-  display: block;
-  width: 44px;
-  height: 44px;
-  transition: 250ms;
-}
-.scroll__link:hover, .scroll__link:focus {
-  outline: none;
-}
-.scroll__link:hover .scroll__svg, .scroll__link:focus .scroll__svg {
-  transform: scale(1.1);
-}
-@media screen and (min-width: 728px) {
-  .scroll__link {
-    width: 68px;
-    height: 68px;
-  }
-}
-.scroll__svg {
-  display: block;
-  width: 44px;
-  height: 44px;
-  border: none;
-  outline: none;
-  transition: 250ms;
-}
-@media screen and (min-width: 728px) {
-  .scroll__svg {
-    width: 68px;
-    height: 68px;
   }
 }
 
