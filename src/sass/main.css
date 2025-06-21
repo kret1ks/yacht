@@ -401,6 +401,13 @@ body {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
+.hero__item:last-child::after {
+  content: "";
+  width: 100px;
+  height: 20px;
+  background-color: #A1B5BA;
+  display: block;
+}
 .hero__clients {
   display: flex;
   position: relative;
@@ -1138,8 +1145,8 @@ body {
   display: block;
   width: 44px;
   height: 44px;
-  display: block;
-  margin-left: 1172px;
+  display: flex;
+  align-items: right;
 }
 @media screen and (min-width: 728px) {
   .scroll__image {
@@ -1350,12 +1357,12 @@ body {
   right: 50%;
   transform: translate(-50%, -50%);
   width: 300px;
+  color: rgba(246, 245, 239, 0.5);
   text-align: center;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.36px;
-  z-index: -4;
 }
 @media screen and (max-width: 300px) {
   .footer__copywright {

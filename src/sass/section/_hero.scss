@@ -120,7 +120,7 @@
         }
 
         .hero__span {
-  background: var(--linear-green, linear-gradient(92deg, #BEC7C2 41.03%, #A1B5BA 90.31%));;
+            background: var(--linear-green, linear-gradient(92deg, #BEC7C2 41.03%, #A1B5BA 90.31%));;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -209,6 +209,7 @@
         @media screen and (min-width: 1246px) {
             order: 1;
         }
+
         
         &::after {
             content: "";
@@ -223,6 +224,16 @@
         }
 
     }
+
+     &__item:last-child{
+            &::after{
+                content:"";
+                width: 100px;
+                height: 20px;
+              background-color: #A1B5BA;
+                display: block;
+            }
+        }
 
     &__clients {
         display: flex;
