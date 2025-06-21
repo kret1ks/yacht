@@ -22,10 +22,41 @@
       <li class="header__item"><a href="#" class="header__text">Reviews</a></li>
    </ul>
 
-   <button type="button" class="header__button">
+   <button type="button" class="header__button" data-menu-open>
       <svg class="header__menu">
          <use href="../img/symbol-defs.svg#icon-menu"></use>
       </svg>
    </button>
+
+   <div class="menu is-hidden" data-menu>
+      <button type="button" class="menu__close" data-menu-close>
+         <svg class="menu__icon">
+            <use href="../img/symbol-defs.svg#icon-close"></use>
+         </svg>
+      </button>
+      <ul class="header__groupe">
+         <li class="header__element">
+            <a href="./header.html" class="header__icon">
+               <svg class="header__logo">
+                  <use href="../img/symbol-defs.svg#icon-yacht"></use>
+               </svg>
+            </a>
+         </li>
+         <li class="header__element">
+            <a href="./header.html" class="header__link">
+               <svg class="header__text">
+                  <use href="../img/symbol-defs.svg#icon-yacht-logo"></use>
+               </svg>
+            </a>
+         </li>
+         </ul>
+      <ul class="menu__list">
+         <li class="menu__item"><a href="./footer.html" class="menu__link">About</a></li>
+         <li class="menu__item"><a href="./yacht.html" class="menu__link">Yachts</a></li>
+         <li class="menu__item"><a href="./scroll.html" class="menu__link">Reviews</a></li>
+      </ul>
+   </div>
+
+
 </div>
 </section>
