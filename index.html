@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
     <script type="module" crossorigin src="/yacht/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/yacht/assets/index-959f44d9.css">
+    <link rel="stylesheet" href="/yacht/assets/index-b6136bbe.css">
   </head>
   <body>
    
@@ -41,11 +41,42 @@
       <li class="header__item"><a href="#" class="header__text">Reviews</a></li>
    </ul>
 
-   <button type="button" class="header__button">
+   <button type="button" class="header__button" data-menu-open>
       <svg class="header__menu">
          <use href="../img/symbol-defs.svg#icon-menu"></use>
       </svg>
    </button>
+
+   <div class="menu is-hidden" data-menu>
+      <button type="button" class="menu__close" data-menu-close>
+         <svg class="menu__icon">
+            <use href="../img/symbol-defs.svg#icon-close"></use>
+         </svg>
+      </button>
+      <ul class="header__groupe">
+         <li class="header__element">
+            <a href="./header.html" class="header__icon">
+               <svg class="header__logo">
+                  <use href="../img/symbol-defs.svg#icon-yacht"></use>
+               </svg>
+            </a>
+         </li>
+         <li class="header__element">
+            <a href="./header.html" class="header__link">
+               <svg class="header__text">
+                  <use href="../img/symbol-defs.svg#icon-yacht-logo"></use>
+               </svg>
+            </a>
+         </li>
+         </ul>
+      <ul class="menu__list">
+         <li class="menu__item"><a href="./footer.html" class="menu__link">About</a></li>
+         <li class="menu__item"><a href="./yacht.html" class="menu__link">Yachts</a></li>
+         <li class="menu__item"><a href="./scroll.html" class="menu__link">Reviews</a></li>
+      </ul>
+   </div>
+
+
 </div>
 </section>
     <section class="hero">
@@ -116,7 +147,7 @@
 </section>
     <section class="adventures">
     <div class="container">
-    <p class="adventures__text">Yacht Adventures fleet is here to take you on the ultimate adventure. Each yacht is
+    <p class="adventures__text"><span class="adventures__style">Yacht Adventures</span> fleet is here to take you on the ultimate adventure. Each yacht is
         hand-picked for its comfort, style,
         and performance.</p>
     <ul class="adventures__list">
@@ -145,7 +176,9 @@
         </li>
     </ul>
 
+    <div class="adventures__position">
     <h2 class="adventures__title">Choose your dream yacht and sail away into the sunset</h2>
+</div>
 
     <button type="button" class="adventures__button">Yacht rental</button>
     <svg class="svg"  xmlns="http://www.w3.org/2000/svg" width="375" height="656" viewBox="0 0 375 656" fill="none">
@@ -549,8 +582,8 @@
 
 
 
+  
     
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal-yachtnow.js"></script>
+
   </body>
 </html>
