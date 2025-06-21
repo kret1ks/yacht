@@ -154,9 +154,9 @@ body {
   right: 20px;
 }
 .menu__icon {
-  width: 24px;
-  height: 24px;
-  fill: #F6F5EF;
+  width: 50px;
+  height: 50px;
+  color: red;
 }
 .menu__groupe {
   border-bottom: 4px;
@@ -584,6 +584,7 @@ body {
   align-items: center;
   gap: 24px;
   position: relative;
+  margin-bottom: 170px;
 }
 @media screen and (min-width: 736px) {
   .adventures__groupe {
@@ -606,14 +607,27 @@ body {
     height: 631px;
   }
 }
+@media screen and (min-width: 1248px) {
+  .adventures__kitchen {
+    width: 533px;
+    height: 473px;
+  }
+}
 .adventures__sofa {
   width: 335px;
   height: 289px;
+  position: absolute;
 }
 @media screen and (min-width: 736px) {
   .adventures__sofa {
     width: 308px;
     height: 289px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .adventures__sofa {
+    left: 20px;
+    bottom: -20px;
   }
 }
 .adventures__yacht {
@@ -632,8 +646,8 @@ body {
 }
 @media screen and (min-width: 1248px) {
   .adventures__yacht {
-    left: 260px;
-    bottom: 70px;
+    left: 350px;
+    bottom: -220px;
   }
 }
 .adventures__row {
@@ -661,6 +675,13 @@ body {
     font-size: 70px;
   }
 }
+@media screen and (min-width: 1248px) {
+  .adventures__title {
+    width: 882px;
+    font-size: 100px;
+    margin-left: 180px;
+  }
+}
 .adventures__button {
   background-color: transparent;
   padding: 14px 28px;
@@ -668,6 +689,11 @@ body {
   border-radius: 60px;
   border: 1px solid var(--white, #f6f5ef);
   margin-top: 306px;
+}
+@media screen and (min-width: 1248px) {
+  .adventures__button {
+    margin-left: 180px;
+  }
 }
 
 .svg {
