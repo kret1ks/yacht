@@ -1167,15 +1167,37 @@ body {
     padding: 64px 0px 0px 0px;
   }
 }
-.scroll__image {
+.scroll__link {
+  outline: none;
   display: block;
   width: 44px;
   height: 44px;
-  display: flex;
-  align-items: right;
+  transition: 250ms;
+  margin: 0px 0px 0px auto;
+}
+.scroll__link:hover, .scroll__link:focus {
+  outline: none;
+}
+.scroll__link:hover .scroll__svg, .scroll__link:focus .scroll__svg {
+  transform: scale(1.1);
 }
 @media screen and (min-width: 728px) {
-  .scroll__image {
+  .scroll__link {
+    width: 68px;
+    height: 68px;
+  }
+}
+.scroll__svg {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border: none;
+  outline: none;
+  transition: 250ms;
+  opacity: 1;
+}
+@media screen and (min-width: 728px) {
+  .scroll__svg {
     width: 68px;
     height: 68px;
   }
