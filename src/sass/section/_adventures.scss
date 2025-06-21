@@ -1,11 +1,16 @@
 .adventures {
-  padding-top: 80px;
-  padding-bottom: 80px;
   background-color: $hero-color;
   // background-image: url(../../img/adventuresspot.webp);
   // background-repeat: no-repeat;
   // background-position: left bottom;
   position: relative;
+
+  &__style {
+    background: linear-gradient(92deg, #bec7c2 41.03%, #a1b5ba 90.31%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
   &__text {
     color: $logo-color;
@@ -15,7 +20,7 @@
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -1.08px;
-    width: 335px;
+    width: 100%;
     margin-bottom: 40px;
 
     @media screen and (min-width: 736px) {
@@ -40,7 +45,7 @@
     font-weight: 400;
     line-height: 1.4;
     letter-spacing: -0.28px;
-    width: 160px;
+    width: 100%;
 
     @media screen and (min-width: 736px) {
       font-size: 16px;
@@ -51,7 +56,17 @@
   &__groupe {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 24px;
+    position: relative;
+
+    @media screen and (min-width: 736px) {
+      align-items: flex-start;
+    }
+
+    @media screen and (min-width: 1248px) {
+      align-items: center;
+    }
   }
 
   &__kitchen {
@@ -59,9 +74,13 @@
     height: 524px;
     margin-top: 40px;
 
+
     @media screen and (min-width: 736px) {
       width: 704px;
       height: 631px;
+    }
+
+    @media screen and (min-width: 1248px) {
     }
   }
 
@@ -79,8 +98,28 @@
     width: 260px;
     height: 244px;
     border-radius: 27px;
+    position: absolute;
+    left: 75px;
+    bottom: -250px;
 
+    @media screen and (min-width: 736px) {
+      left: 340px;
+      bottom: -110px;
+    }
 
+    @media screen and (min-width: 1248px) {
+      left: 260px;
+      bottom: 70px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__position {
+    position: relative;
   }
 
   &__title {
@@ -91,6 +130,9 @@
     line-height: 1.1;
     letter-spacing: -1.62px;
     width: 310px;
+    position: absolute;
+    left: 0px;
+    bottom: -250px;
 
     @media screen and (min-width: 736px) {
       width: 641px;
@@ -98,9 +140,7 @@
     }
 
     @media screen and (min-width: 1248px) {
-      font-size: 100px;
-      width: 822px;
-      
+
     }
   }
 
@@ -110,7 +150,7 @@
     color: $logo-color;
     border-radius: 60px;
     border: 1px solid var(--white, #f6f5ef);
-    margin-top: 40px;
+    margin-top: 306px;
   }
 }
 
@@ -118,4 +158,5 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  z-index: 1;
 }

@@ -135,6 +135,55 @@ body {
   fill: #F6F5EF;
 }
 
+.menu {
+  width: 100%;
+  height: 100%;
+  padding: 24px 20px 0px 20px;
+  position: fixed;
+  background: #11131F;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  opacity: 1;
+}
+.menu__close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 24px;
+  right: 20px;
+}
+.menu__icon {
+  width: 24px;
+  height: 24px;
+  fill: #F6F5EF;
+}
+.menu__groupe {
+  border-bottom: 4px;
+  border-color: rgba(246, 245, 239, 0.2);
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: 140px;
+}
+.menu__link {
+  color: #F6F5EF;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
 .hero {
   padding: 40px 0px 80px 0px;
   background: #11131f;
@@ -471,10 +520,14 @@ body {
 }
 
 .adventures {
-  padding-top: 80px;
-  padding-bottom: 80px;
   background-color: #11131F;
   position: relative;
+}
+.adventures__style {
+  background: linear-gradient(92deg, #bec7c2 41.03%, #a1b5ba 90.31%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .adventures__text {
   color: #F6F5EF;
@@ -484,7 +537,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -1.08px;
-  width: 335px;
+  width: 100%;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 736px) {
@@ -509,7 +562,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: -0.28px;
-  width: 160px;
+  width: 100%;
 }
 @media screen and (min-width: 736px) {
   .adventures__subtext {
@@ -520,7 +573,19 @@ body {
 .adventures__groupe {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
+  position: relative;
+}
+@media screen and (min-width: 736px) {
+  .adventures__groupe {
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .adventures__groupe {
+    align-items: center;
+  }
 }
 .adventures__kitchen {
   width: 335px;
@@ -547,6 +612,28 @@ body {
   width: 260px;
   height: 244px;
   border-radius: 27px;
+  position: absolute;
+  left: 75px;
+  bottom: -250px;
+}
+@media screen and (min-width: 736px) {
+  .adventures__yacht {
+    left: 340px;
+    bottom: -110px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .adventures__yacht {
+    left: 260px;
+    bottom: 70px;
+  }
+}
+.adventures__row {
+  display: flex;
+  align-items: flex-end;
+}
+.adventures__position {
+  position: relative;
 }
 .adventures__title {
   color: #F6F5EF;
@@ -556,17 +643,14 @@ body {
   line-height: 1.1;
   letter-spacing: -1.62px;
   width: 310px;
+  position: absolute;
+  left: 0px;
+  bottom: -250px;
 }
 @media screen and (min-width: 736px) {
   .adventures__title {
     width: 641px;
     font-size: 70px;
-  }
-}
-@media screen and (min-width: 1248px) {
-  .adventures__title {
-    font-size: 100px;
-    width: 822px;
   }
 }
 .adventures__button {
@@ -575,13 +659,14 @@ body {
   color: #F6F5EF;
   border-radius: 60px;
   border: 1px solid var(--white, #f6f5ef);
-  margin-top: 40px;
+  margin-top: 306px;
 }
 
 .svg {
   position: absolute;
   left: 0;
   bottom: 0;
+  z-index: 1;
 }
 
 .boat {
