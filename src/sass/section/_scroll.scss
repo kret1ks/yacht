@@ -1,0 +1,27 @@
+.scroll {
+    padding: 43px 0px 0px 0px;
+     background: #11131f;
+
+    @media screen and (min-width: 728px) {
+        padding: 45px 0px 0px 0px;
+    }
+
+    @media screen and (min-width: 1246px) {
+        padding: 64px 0px 0px 0px;
+    }
+
+    &__image {
+        display: block;
+        width: 44px;
+        height: 44px;
+         display: block;
+         margin-left: 1172px;
+       
+
+        @media screen and (min-width: 728px) {
+            width: 68px;
+            height: 68px;
+        }
+    }
+
+}
