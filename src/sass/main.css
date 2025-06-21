@@ -263,6 +263,7 @@ body {
   }
 }
 .hero__title .hero__span {
+  background: var(--linear-green, linear-gradient(92deg, #BEC7C2 41.03%, #A1B5BA 90.31%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1034,6 +1035,53 @@ body {
   }
 }
 
+.scroll {
+  padding: 43px 0px 0px 0px;
+}
+@media screen and (min-width: 728px) {
+  .scroll {
+    padding: 45px 0px 0px 0px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .scroll {
+    padding: 64px 0px 0px 0px;
+  }
+}
+.scroll__link {
+  outline: none;
+  display: block;
+  width: 44px;
+  height: 44px;
+  transition: 250ms;
+}
+.scroll__link:hover, .scroll__link:focus {
+  outline: none;
+}
+.scroll__link:hover .scroll__svg, .scroll__link:focus .scroll__svg {
+  transform: scale(1.1);
+}
+@media screen and (min-width: 728px) {
+  .scroll__link {
+    width: 68px;
+    height: 68px;
+  }
+}
+.scroll__img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border: none;
+  outline: none;
+  transition: 250ms;
+}
+@media screen and (min-width: 728px) {
+  .scroll__img {
+    width: 68px;
+    height: 68px;
+  }
+}
+
 .footer {
   padding: 40px 0px 54px 0px;
   position: relative;
@@ -1127,6 +1175,7 @@ body {
   width: 18px;
   height: 18px;
   transition: 250ms;
+  fill: white;
 }
 @media screen and (min-width: 728px) {
   .footer__logo-img {
@@ -1235,7 +1284,6 @@ body {
   right: 50%;
   transform: translate(-50%, -50%);
   width: 300px;
-  color: rgba(246, 245, 239, 0.5);
   text-align: center;
   font-size: 12px;
   font-weight: 400;
