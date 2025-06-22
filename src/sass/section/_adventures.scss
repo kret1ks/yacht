@@ -61,17 +61,32 @@
   &__groupe {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     gap: 24px;
-    position: relative;
-    margin-bottom: 170px;
 
     @media screen and (min-width: 736px) {
-      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+
+  &__element:last-child {
+    @media screen and (min-width: 736px) {
+      transform: translateY(60%);
     }
 
     @media screen and (min-width: 1248px) {
-      align-items: center;
+      transform: translateY(0);
+      transform: translateX(130%);
+    }
+  }
+
+  &__element:nth-child(2){
+    @media screen and (min-width: 1248px){
+      order: -1;
+      transform: translateY(30%);
+
     }
   }
 
@@ -84,26 +99,15 @@
       width: 704px;
       height: 631px;
     }
-
-    @media screen and (min-width: 1248px) {
-      width: 533px;
-      height: 473px;
-    }
   }
 
   &__sofa {
     width: 335px;
     height: 289px;
-    position: absolute;
 
     @media screen and (min-width: 736px) {
       width: 308px;
       height: 289px;
-    }
-
-    @media screen and (min-width: 1248px) {
-      left: 20px;
-      bottom: -20px;
     }
   }
 
@@ -111,19 +115,6 @@
     width: 260px;
     height: 244px;
     border-radius: 27px;
-    position: absolute;
-    left: 75px;
-    bottom: -250px;
-
-    @media screen and (min-width: 736px) {
-      left: 340px;
-      bottom: -110px;
-    }
-
-    @media screen and (min-width: 1248px) {
-      left: 350px;
-      bottom: -220px;
-    }
   }
 
   &__row {
@@ -143,9 +134,6 @@
     line-height: 1.1;
     letter-spacing: -1.62px;
     width: 310px;
-    position: absolute;
-    left: 0px;
-    bottom: -250px;
 
     @media screen and (min-width: 736px) {
       width: 641px;
@@ -165,7 +153,6 @@
     color: $logo-color;
     border-radius: 60px;
     border: 1px solid var(--white, #f6f5ef);
-    margin-top: 306px;
 
     @media screen and (min-width: 1248px) {
       margin-left: 180px;
@@ -173,9 +160,9 @@
   }
 }
 
-.svg {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-}
+// .svg {
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   z-index: 1;
+// }

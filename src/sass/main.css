@@ -581,19 +581,31 @@ body {
 .adventures__groupe {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
   gap: 24px;
-  position: relative;
-  margin-bottom: 170px;
 }
 @media screen and (min-width: 736px) {
   .adventures__groupe {
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 736px) {
+  .adventures__element:last-child {
+    transform: translateY(60%);
   }
 }
 @media screen and (min-width: 1248px) {
-  .adventures__groupe {
-    align-items: center;
+  .adventures__element:last-child {
+    transform: translateY(0);
+    transform: translateX(130%);
+  }
+}
+@media screen and (min-width: 1248px) {
+  .adventures__element:nth-child(2) {
+    order: -1;
+    transform: translateY(30%);
   }
 }
 .adventures__kitchen {
@@ -607,16 +619,9 @@ body {
     height: 631px;
   }
 }
-@media screen and (min-width: 1248px) {
-  .adventures__kitchen {
-    width: 533px;
-    height: 473px;
-  }
-}
 .adventures__sofa {
   width: 335px;
   height: 289px;
-  position: absolute;
 }
 @media screen and (min-width: 736px) {
   .adventures__sofa {
@@ -624,31 +629,10 @@ body {
     height: 289px;
   }
 }
-@media screen and (min-width: 1248px) {
-  .adventures__sofa {
-    left: 20px;
-    bottom: -20px;
-  }
-}
 .adventures__yacht {
   width: 260px;
   height: 244px;
   border-radius: 27px;
-  position: absolute;
-  left: 75px;
-  bottom: -250px;
-}
-@media screen and (min-width: 736px) {
-  .adventures__yacht {
-    left: 340px;
-    bottom: -110px;
-  }
-}
-@media screen and (min-width: 1248px) {
-  .adventures__yacht {
-    left: 350px;
-    bottom: -220px;
-  }
 }
 .adventures__row {
   display: flex;
@@ -665,9 +649,6 @@ body {
   line-height: 1.1;
   letter-spacing: -1.62px;
   width: 310px;
-  position: absolute;
-  left: 0px;
-  bottom: -250px;
 }
 @media screen and (min-width: 736px) {
   .adventures__title {
@@ -688,19 +669,11 @@ body {
   color: #F6F5EF;
   border-radius: 60px;
   border: 1px solid var(--white, #f6f5ef);
-  margin-top: 306px;
 }
 @media screen and (min-width: 1248px) {
   .adventures__button {
     margin-left: 180px;
   }
-}
-
-.svg {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
 }
 
 .boat {
