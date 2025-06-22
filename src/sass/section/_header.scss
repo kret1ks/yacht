@@ -1,9 +1,32 @@
 .header {
-  padding-top: 27px;
+  padding-top: 24px;
   padding-bottom: 28px;
   background-color: $hero-color;
-  stroke-width: 1px;
-  stroke: rgba(246, 245, 239, 0.2);
+
+  &::after{
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 335px;
+    height: 1px;
+    border-top: 1px solid rgba(246, 245, 239, 0.20);
+
+    @media screen and (max-width: 335px) {
+      width: 100%;
+  }
+
+  @media screen and (min-width: 728px) {
+      width: 704px;
+  }
+
+  @media screen and (min-width: 1246px) {
+      width: 1216px;
+  }
+  }
+ 
 
   &__box {
     display: flex;
@@ -82,7 +105,33 @@
   top: 0;
   left: 0;
   z-index: 6;
-  opacity: 1;
+  opacity: 1; 
+
+  &::after{
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 335px;
+    height: 1px;
+    top: 70px;
+    left: 50%;
+    right: 50%;
+    
+    border-top: 1px solid rgba(246, 245, 239, 0.20);
+
+    @media screen and (max-width: 335px) {
+      width: 100%;
+  }
+
+  @media screen and (min-width: 728px) {
+      width: 704px;
+  }
+
+  @media screen and (min-width: 1246px) {
+      width: 1216px;
+  }
+  }
+
 
   &__close {
     background-color: transparent;
@@ -93,15 +142,11 @@
   }
 
   &__icon {
-    width: 50px;
-    height: 50px;
-    color: red;
+    width: 24px;
+    height: 24px;
+    fill: $logo-color;
   }
 
-  &__groupe {
-    border-bottom: 4px;
-    border-color: rgba(246, 245, 239, 0.2);
-  }
 
   &__list {
     display: flex;
