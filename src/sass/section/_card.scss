@@ -3,7 +3,7 @@
   background-color: $hero-color;
   padding-bottom: 164px;
 
-  .card__list {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 64px;
@@ -12,10 +12,31 @@
   }
 
   &__item {
+     position: relative;
     border-radius: 40px;
     overflow: hidden;
     cursor: pointer;
   }
+
+
+&__btn {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+
+  padding: 14px 28px;
+  background-color: $logo-color;
+  color: $hero-color;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+
 
   &__diving {
     width: 335px;

@@ -904,7 +904,7 @@ body {
   background-color: #11131F;
   padding-bottom: 164px;
 }
-.card .card__list {
+.card__list {
   display: flex;
   flex-wrap: wrap;
   gap: 64px;
@@ -912,9 +912,25 @@ body {
   align-items: flex-end;
 }
 .card__item {
+  position: relative;
   border-radius: 40px;
   overflow: hidden;
   cursor: pointer;
+}
+.card__btn {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  padding: 14px 28px;
+  background-color: #F6F5EF;
+  color: #11131F;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1;
 }
 .card__diving {
   width: 335px;
