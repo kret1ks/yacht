@@ -1,11 +1,11 @@
 .scroll {
     padding: 43px 0px 0px 0px;
     background: #11131f;
-    @media screen and (min-width: 728px) {
+    @media screen and (min-width: 736px) {
         padding: 45px 0px 0px 0px;
     }
 
-    @media screen and (min-width: 1246px) {
+    @media screen and (min-width: 1248px) {
         padding: 64px 0px 0px 0px;
     }                   
     &__link {
@@ -23,7 +23,7 @@
             }
         }
 
-        @media screen and (min-width: 728px) {
+        @media screen and (min-width: 736px) {
             width: 68px;
             height: 68px;
         }
@@ -39,7 +39,7 @@
         opacity: 1;
        
 
-        @media screen and (min-width: 728px) {
+        @media screen and (min-width: 736px) {
             width: 68px;
             height: 68px;
         }

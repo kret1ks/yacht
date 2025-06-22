@@ -2,11 +2,11 @@
     padding: 40px 0px 80px 0px;
     background: #11131f;
 
-    @media screen and (min-width: 728px) {
+    @media screen and (min-width: 736px) {
         padding: 64px 0px 100px 0px;
     }
 
-    @media screen and (min-width: 1246px) {
+    @media screen and (min-width: 1248px) {
         padding: 64px 0px 164px 0px;
     }
 
@@ -26,11 +26,11 @@
             background: $acent-color;
             filter: blur(100px);
 
-            @media screen and (max-width: 361px) {
+            @media screen and (max-width: 355px) {
                 width: 100%;
             }
 
-            @media screen and (min-width: 728px) {
+            @media screen and (min-width: 736px) {
                 top: 480px;
                 width: 414px;
                 height: 414px;
@@ -38,7 +38,7 @@
                 opacity: 0.9;
             }
 
-            @media screen and (min-width: 1246px) {
+            @media screen and (min-width: 1248px) {
                 top: 150px;
             }
         }
@@ -56,11 +56,11 @@
             filter: blur(100px);
             z-index: -3;
 
-            @media screen and (max-width: 361px) {
+            @media screen and (max-width: 355px) {
                 width: 100%;
             }
             
-            @media screen and (min-width: 728px) {
+            @media screen and (min-width: 736px) {
                 left: 50px;
                 width: 316.907px;
                 height: 316.908px;
@@ -68,7 +68,7 @@
                 opacity: 0.3;
             }
             
-            @media screen and (min-width: 1246px) {
+            @media screen and (min-width: 1248px) {
                 top: 150px;
                 left: 150px;
                 width: 316px;
@@ -84,7 +84,7 @@
         justify-content: space-between;
         gap: 40px;
 
-        @media screen and (min-width: 1246px) {
+        @media screen and (min-width: 1248px) {
             flex-direction: row;
         }
     }
@@ -96,7 +96,7 @@
     &__items>&__item:nth-child(1) {
         padding: 0px 0px 0px 0px;
 
-        @media screen and (min-width: 1246px) {
+        @media screen and (min-width: 1248px) {
             order: 2;
             padding: 68px 0px 0px 0px;
         }
@@ -110,12 +110,12 @@
         line-height: 1.1;
         letter-spacing: -1.62px; 
 
-        @media screen and (min-width: 728px) {
+        @media screen and (min-width: 736px) {
             font-size: 60px;
             letter-spacing: -2.7px; 
         }
 
-        @media screen and (min-width: 1246px) {
+        @media screen and (min-width: 1248px) {
             width: 554px;
         }
 
@@ -137,14 +137,14 @@
         letter-spacing: -0.28px;
         margin: 14px 0px 24px 0px; 
 
-        @media screen and (min-width: 728px) {
+        @media screen and (min-width: 736px) {
             width: 539px;
             font-size: 16px;
             letter-spacing: -0.32px; 
             margin: 16px 0px 32px 0px;
         }
 
-        @media screen and (min-width: 1246px) {
+        @media screen and (min-width: 1248px) {
 
         }
     }
@@ -169,7 +169,7 @@
         letter-spacing: -0.63px;
         transition: 250ms;
 
-        @media screen and (min-width: 728px) {
+        @media screen and (min-width: 736px) {
             font-size: 18px;
             letter-spacing: -0.81px; 
         }
@@ -200,13 +200,13 @@
         position: relative;
         margin: 0px 0px 19px 0px;
 
-        @media screen and (min-width: 728px) {
+        @media screen and (min-width: 736px) {
             padding: 32px 32px 38px 32px;
             width: 426px; 
             margin: 0px 0px 25.7px 0px;
         }
 
-        @media screen and (min-width: 1246px) {
+        @media screen and (min-width: 1248px) {
             order: 1;
         }
 
@@ -309,7 +309,7 @@
         gap: 14px;
         align-items: center;
 
-        @media screen and (max-width: 200px) {
+        @media screen and (max-width: 355px) {
             flex-wrap: wrap;
         }
     }
@@ -322,7 +322,7 @@
         letter-spacing: -2.16px;
         text-transform: uppercase; 
 
-        @media screen and (min-width: 728px) {
+        @media screen and (min-width: 736px) {
             font-size: 60px;
             letter-spacing: -2.7px; 
         }
@@ -336,7 +336,7 @@
         line-height: 1.1;
         letter-spacing: -0.63px;
 
-        @media screen and (min-width: 728px) {
+        @media screen and (min-width: 736px) {
             width: 208px;
             font-size: 18px;
             line-height: 1.4; 
@@ -352,11 +352,11 @@
         top: 35px;
         right: -12px;
 
-        @media screen and (min-width: 728px) {
+        @media screen and (min-width: 736px) {
             width: 233px;
             right: -146px;
         }
-        @media screen and (min-width: 1246px) {
+        @media screen and (min-width: 1248px) {
             right: -112px;
         }
     }
