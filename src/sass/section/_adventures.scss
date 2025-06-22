@@ -1,9 +1,33 @@
 .adventures {
   background-color: $hero-color;
-  // background-image: url(../../img/adventuresspot.webp);
-  // background-repeat: no-repeat;
-  // background-position: left bottom;
   position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 1350px;
+    left: 0px;
+    width: 255px;
+    height: 255px;
+    border-radius: 420px;
+    opacity: 0.6;
+    background: $acent-color;
+    filter: blur(100px);
+
+    @media screen and (min-width: 728px) {
+      top: 1400px;
+      width: 499px;
+      border-radius: 400px;
+    }
+
+    @media screen and (min-width: 1246px) {
+      top: 1200px;
+      left: 300px;
+      border-radius: 415px;
+      width: 414px;
+      height: 414px;
+    }
+  }
 
   &__style {
     background: linear-gradient(92deg, #bec7c2 41.03%, #a1b5ba 90.31%);
@@ -82,11 +106,10 @@
     }
   }
 
-  &__element:nth-child(2){
-    @media screen and (min-width: 1248px){
+  &__element:nth-child(2) {
+    @media screen and (min-width: 1248px) {
       order: -1;
       transform: translateY(30%);
-
     }
   }
 
@@ -122,10 +145,6 @@
     align-items: flex-end;
   }
 
-  &__position {
-    position: relative;
-  }
-
   &__title {
     color: $logo-color;
     font-family: 'DM Sans';
@@ -134,16 +153,19 @@
     line-height: 1.1;
     letter-spacing: -1.62px;
     width: 310px;
+    transform: translateY(-100%);
 
     @media screen and (min-width: 736px) {
       width: 641px;
       font-size: 70px;
+      transform: translateY(30%);
     }
 
     @media screen and (min-width: 1248px) {
       width: 882px;
       font-size: 100px;
       margin-left: 180px;
+      transform: translateY(-30%);
     }
   }
 
@@ -153,9 +175,23 @@
     color: $logo-color;
     border-radius: 60px;
     border: 1px solid var(--white, #f6f5ef);
+    transform: translateY(-180%);
+
+    @media screen and (min-width: 736px) {
+      transform: none;
+      margin-top: 100px;
+    }
 
     @media screen and (min-width: 1248px) {
+      transform: translateY(-260%);
+      margin-top: none;
       margin-left: 180px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $acent-color;
+      border-color: $acent-color;
     }
   }
 }
