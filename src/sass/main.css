@@ -900,6 +900,65 @@ body {
   }
 }
 
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  z-index: 999;
+  padding: 20px;
+}
+.modal.is-hidden {
+  display: none;
+}
+.modal__content {
+  background: #1a1a1a;
+  border-radius: 24px;
+  padding: 32px;
+  max-width: 90%;
+  width: 400px;
+  color: white;
+  position: relative;
+  text-align: center;
+  border-radius: 40px;
+  background: #1F212D;
+}
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+.modal__img {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 24px;
+}
+.modal__title {
+  text-align: left;
+  color: var(--white, #F6F5EF);
+  font-family: "DM Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.44px;
+}
+.modal__text {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #F6F5EF;
+  margin-top: 25px;
+}
+
 .card {
   background-color: #11131F;
   padding-bottom: 164px;
